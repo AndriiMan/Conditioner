@@ -7,13 +7,32 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="333dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="Condecioner Haier-26m"
+        android:textColor="#F4511E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
         android:id="@+id/text_status"
         android:layout_width="0dp"
         android:layout_height="241dp"
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="252dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:text="Temperature"
@@ -23,4 +42,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="343dp"
+        android:layout_height="144dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/condecioner2" />
 </android.support.constraint.ConstraintLayout>

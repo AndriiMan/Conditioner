@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity
     public static Room room3;
     private TextView txtView;
 
+    String PlayMarkLink;
     //private TextView textView11;
 
     @Override
@@ -138,9 +139,24 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_addroom) {
+            //////////////CHANGE SCENE ////////////////////////////////////////////////
+            Intent b = new Intent(MainActivity.this, Bluetooth.class);
+            startActivity(b);
 
         } else if (id == R.id.nav_share) {
+            Intent shareintent = new Intent();
+            String shareBody = "Telegram";
+            PlayMarkLink = "https://play.google.com/store";
+            shareintent.setType("text/plain");
+            shareintent.setAction(Intent.ACTION_SEND);
+            shareintent.putExtra(Intent.EXTRA_SUBJECT,PlayMarkLink);
 
+            ///////////////////////////// For send button/////////////////////////////////////////
+            //shareintent.putExtra(Intent.EXTRA_CHOOSER_TARGETS, shareBody);
+            //shareintent.putExtra(Intent.EXTRA_INITIAL_INTENTS, myInitialIntentArray);
+            //shareintent.putExtra(Intent.EXTRA_TEXT,shareBody);
+
+            startActivity(Intent.createChooser(shareintent, "share via"));
         } else if (id == R.id.nav_send) {
 
         }

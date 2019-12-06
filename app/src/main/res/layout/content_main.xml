@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="#BFDCF7">
 
     <TextView
         android:id="@+id/text11"
@@ -32,7 +33,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnrm3"
         app:layout_constraintTop_toBottomOf="@+id/seekBar1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/main_butt_color"/>
 
     <Button
         android:id="@+id/btnrm3"
@@ -42,15 +46,21 @@
         android:layout_marginLeft="16dp"
         android:text="Room 2"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnrm2"
-        app:layout_constraintStart_toEndOf="@+id/btnrm1" />
+        app:layout_constraintStart_toEndOf="@+id/btnrm1"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/main_butt_color"/>
 
     <Button
         android:id="@+id/btnrm1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/main_butt_color"
         android:text="Room1"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnrm3"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -70,12 +80,26 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
-        android:layout_height="73dp"
+        android:layout_height="0dp"
         android:layout_marginTop="28dp"
+        android:layout_marginBottom="165dp"
         android:text="Please chose temperature "
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
         app:layout_constraintEnd_toEndOf="@+id/seekBar1"
         app:layout_constraintStart_toStartOf="@+id/seekBar1"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="116dp"
+        android:text="Auto regime "
+        app:layout_constraintBottom_toTopOf="@+id/btnrm1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/MySwitch"/>
 
 </android.support.constraint.ConstraintLayout>

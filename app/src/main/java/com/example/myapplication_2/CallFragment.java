@@ -37,7 +37,7 @@ public class CallFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_call) {
-            Toast.makeText(getActivity(), "Clicked on " + item.getTitle(), Toast.LENGTH_SHORT)
+            Toast.makeText(getActivity(), "Condecioner in " + item.getTitle()+" will be cleaned", Toast.LENGTH_SHORT)
                     .show();
         }
         return true;

@@ -2,10 +2,11 @@
     <string name="app_name">Kondicioner</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Kondecioner</string>
+    <string name="nav_header_subtitle">version 1.13.13</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="Share_playmarket">https://play.google.com/store</string>
 
     <string name="menu_home">This room</string>
     <string name="menu_rooms">Rooms</string>
